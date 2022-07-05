@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --hue: 240;
+  --primary-color: hsla(var(--hue), 6%, 21%, 1);
+  --color-nav: hsl(var(--hue), 6%, 58%);
+  --text-color: hsl(var(--hue), 9%, 89%);
+
+  --hover-nav: hsl(calc(240 - var(--hue)), 0%, 100%);
+  --text-button: hsl(calc(var(--hue) - 46), 97%, 31%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 100vh;
+}
+
+nav {
+  font-size: 2.4rem;
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-top: 4rem;
+  margin-left: 7.2rem;
+}
+
+a img {
+  max-width: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-nav);
+  font-weight: 400;
+
+  transition: 280ms;
+}
+
+a:hover {
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  font-weight: 400;
+  color: var(--text-color);
+  max-width: 64.8rem;
+  margin-top: 1.6rem;
+}
+
+.wrapper-home {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40%;
+  left: 37.5%;
+
+  max-width: 40rem;
+}
+
+.button {
+  margin-top: 2.4rem;
+}
+
+.button a {
+  cursor: pointer;
+
+  text-decoration: none;
+  background-color: transparent;
+
+  line-height: 2.4rem;
+  border: 1px solid white;
+  padding: 1.2rem 3.2rem;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  transition: 280ms;
+}
+
+.button a:hover {
+  color: var(--text-button);
+  background: var(--text-color);
+}
+
+.wrapper-universe,
+.wrapper-exploration {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+  top: 30%;
+  left: 7%;
+}
